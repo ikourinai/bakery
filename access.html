@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakery Sample</title>
+  <!-- CSSを読み込む -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="container">
+    <h1 id="logo"><a href="index.html">
+        <img src="https://user-images.githubusercontent.com/102784267/233595845-fbb45d76-0f04-470f-ae9f-5760bde10c15.png" width="450">
+    </a></h1>
+  </header>
+    
+ <div id="menubar" class="container">
+    <nav>
+    <ul>
+    <li><a href="index.html">ホーム</a></li>
+    <li><a href="greeting.html">コンセプト</a></li>
+    <li><a href="menu.html">商品紹介</a></li>
+    <li><a href="access.html">店舗情報</a></li>
+    </ul>
+    </nav>
+ </div>
+
+ <!-- 店舗情報 -->
+ <section class="container main">
+  <div class="section-title">
+      <!-- <img src="https://user-images.githubusercontent.com/102784267/233593930-4b0e0093-3703-47ee-90bc-f91594cf4810.png" width="70" height="70"> -->
+      <img src="https://user-images.githubusercontent.com/102784267/233593920-e899265d-4154-4256-9151-a0c54e26375e.png" width="65" height="65">
+      <h3>店舗情報</h3>
+  </div>
+  
+  <div class="row">
+    <div class="col-lg-6 store-map">
+      <img src="https://user-images.githubusercontent.com/102784267/233602759-8d23b6ac-9fd1-4f72-a002-a90fbb27e67e.png" id="store-img" width="400">
+    </div>
+    <dl class="col-lg-6 store-info">
+      <dt>営業時間</dt>
+      <dd>月～金　7：00～18：00、　土　7：00～17：00</dd>
+      <dt>住所</dt>
+      <dd>大阪市二四区二五六町2-5-6　（二五六駅より徒歩７分）</dd>
+      <dt>行き方</dt>
+      <dd>二五六駅西口を出て西へ、郵便局のある交差点を直進して更に200ｍ<br>（駐車場はありません）</dd>
+      <dt>電話</dt>
+      <dd>06－****ー*256</dd>
+    </dl>
+    <!--<table class="col-lg-6 store-info">
+      <tr>
+        <th>営業時間</th>
+        <td>月～金　7：00～18：00、　土　7：00～17：00</td>
+      </tr>
+      <tr>
+        <th>住所</th>
+        <td>大阪市二四区二五六町2-5-6　（二五六駅より徒歩７分）</td>
+      </tr>
+      <tr>
+        <th>行き方</th>
+        <td>二五六駅西口を出て西へ、郵便局のある交差点を直進して更に200ｍ<br>（駐車場はありません）</td>
+      </tr>
+      <tr><th>電話</th>
+      <td>06－****ー*256</td></tr>
+    </table>-->
+  </div>  
+  <div class="iframe-box">
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.0448418561778!2d139.74267721573196!3d35.675897837870934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b89b2e1c8b1%3A0x59a123e3d5ac5ab6!2z44CSMTAwLTAwMTQg5p2x5Lqs6YO95Y2D5Luj55Sw5Yy65rC455Sw55S677yR5LiB55uu77yX4oiS77yR!5e0!3m2!1sja!2sjp!4v1545036128899" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.2495094325886!2d135.49158158314825!3d34.69888620309717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6f2a37a7b49%3A0x27d3544d67ba4654!2z5aSn6Ziq6aeF5YmN56ys77yR44OT44Or!5e0!3m2!1sja!2sjp!4v1711209464978!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div> 
+ </section>
+  
+  <!-- フッター -->
+  <footer>
+    <div class="sns-icon">
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-line"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
+    <small>(c) 256times.com</small>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
