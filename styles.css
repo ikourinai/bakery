@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+body {
+    box-sizing: border-box;
+}
+
+/*ヘッダー*/
+header {
+    text-align: center;
+    padding: 3rem 0;
+}
+@media (max-width: 600px) {
+	#logo img {
+		width: 300px;
+	}
+}
+
+/*メニュー*/
+#menubar ul {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 3rem;
+	display: flex;
+	justify-content: space-around;
+	border-top: 1px solid #ddd;		/*色*/
+	border-bottom: 1px solid #ddd;	/*色*/
+  /* background-color: #d66e09; */
+}
+#menubar li {
+	flex: 1;
+	text-align: center;
+    list-style: none;
+}
+#menubar a {
+	text-decoration: none;
+    display: block;
+	color: inherit;
+	padding: 0.7rem 0.5rem;
+}
+#menubar a:hover {
+	background: #ddd;	/*色*/
+	color: #fff;						/*文字色*/
+}
+
+.main {
+  padding-top: 32px;
+}
+
+.section-title {
+  display: flex;
+  /* border-bottom: solid 1px rgba(128, 0, 0, 0.2); */
+  margin-bottom: 32px;
+  justify-content: center;
+}
+
+.section-title h3 {
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+/*ヒーローエリア*/
+  
+  .hero {
+    height: 400px;  /*注*/
+    /* background: pink; */
+    /*display: flex;*/
+  }
+  /*注 ヒーローエリアの高さと、.hero imgの高さを同じにしておかないと、次に来る要素である商品紹介が、下に潜り込んでしまう*/
+  
+  .hero-text h2 {
+    width: 330px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    z-index: 10;
+    /* top: 250px; */
+    top: 350px;
+    left: 340px;
+    /*flex: 1;*/
+  } 
+  .hero-text img {
+    position: absolute;
+    z-index: 10;
+    top: 300px;
+    left: 100px;
+  }
+  @media (max-width: 600px) {
+    .hero-text img {
+      position: absolute;
+      z-index: 10;
+      top: 280px;
+      left: 100px;
+    }
+    .hero-text h2 {
+        position: absolute;
+        z-index: 10;
+        top: 500px;
+        left: 60px;
+    }
+  }
+
+  .hero-img img {
+    /* display: block; */
+    /* max-width: 969px; */
+    /*flex: 3;*/
+    width: 100%;
+    box-sizing: border-box;
+    height: 400px;  /*注*/
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .hero-img img.current {
+    opacity: 1;
+  }
+
+  .intro p {
+    font-size: larger;
+    font-weight: bolder;
+    line-height: 2;
+    color: #999;
+    text-align: center;
+  }
+
+/*お知らせブロック*/
+.news {
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;	/*折り返す*/
+	padding: 0 1rem;
+}
+.news dt,  /*共通設定*/
+.news dd {
+	padding: 5px 0;
+}
+.news dt {  /*日付設定*/
+	width: 6em;
+}
+.news dd {  /*記事設定*/
+	width: calc(100% - 8em);	/*「8em」は上の「.new dt」のwidthの値*/
+}
+
+/*コンセプト*/
+.owner-img img {
+  border-radius: 50%/40% 70% 50% 30%;  
+}
+.owner-img {
+  float: left;
+  margin: 0 3rem 1rem 0;
+  shape-outside: circle();
+}
+#concept-img img {
+  border-radius: 5%;
+}
+#concept-img  {
+  float: right;
+  margin: 0 1rem 0 3rem;
+}
+@media (max-width: 720px) {
+  #concept-img  {
+    text-align: center;
+    float: none;
+    margin: 1rem 0;
+  }
+}
+.concept h4 {
+  margin-top: 24px;
+}
+.concept p {
+  font-size: 1.2em;
+  /* line-height: 1.6; */
+  line-height: 40px;
+  margin-top: 24px;
+}
+
+/*商品紹介*/
+  .item {
+    padding: 24px 24px;
+  }
+
+  .item-img {
+    text-align: center;
+    /*background-color: rgba(255, 249, 192, 0.8);*/
+    border-radius: 10px;
+    padding-top: 10px;
+    margin-bottom: 16px;
+  }
+  
+  .item h4, small {
+    display: inline;  /* 商品名と価格を横並びにする */
+  }
+
+  .item p {
+    margin: 16px 0;
+  }
+
+/* 店舗情報 */
+.store-map {
+  text-align: center;
+}
+.store-info { 
+  font-size: 16px;
+  /* margin: 16px 0; */
+  /* padding: 8px 32px; */
+}
+.store-info dt {
+  margin-top: 16px;
+}
+
+/*アクセスのマップ*/
+.iframe-box {
+	width: 100%;
+	height: 0;
+	padding-top: 56.25%;	/*ここが高さになります。大きくすればよりマップの高さも増します。*/
+	position: relative;
+  margin-top: 2rem;
+	margin-bottom: 2rem;	/*地図の下に空けるスペース。２文字分。*/
+}
+.iframe-box iframe {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+/* フッター */
+  footer {
+    text-align: center;
+    padding: 16px 0;
+    border-top: 1px solid #333;
+    margin-top: 48px;
+    background-color: #eee;
+    /* clear: right; */
+  }
+
+  .sns-icon a + a {
+    margin-left: 16px;
+  }
+
+  footer i:hover {
+    opacity: 0.7;
+  }
+
+  .bi {
+    font-size: 24px;
+  }
+
+  .bi-twitter {
+    color: #1da1f2;
+  }
+  
+  .bi-facebook {
+    color: #1877f2;
+  }
+  
+  .bi-line {
+    color: #00c300;
+  }
+  
+  .bi-instagram {
+    color: #c13584;
+  }
+
