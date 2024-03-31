@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakery Sample</title>
+  <!-- CSSを読み込む -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="container">
+    <h1 id="logo"><a href="index.html">
+        <img src="https://user-images.githubusercontent.com/102784267/233595845-fbb45d76-0f04-470f-ae9f-5760bde10c15.png" width="450">
+    </a></h1>
+  </header>
+    
+ <div id="menubar" class="container">
+    <nav>
+    <ul>
+    <li><a href="index.html">ホーム</a></li>
+    <li><a href="greeting.html">コンセプト</a></li>
+    <li><a href="menu.html">商品紹介</a></li>
+    <li><a href="access.html">店舗情報</a></li>
+    </ul>
+    </nav>
+ </div>
+
+ <!-- 商品紹介 -->
+ <section class="container main">
+    <div class="section-title">       
+        <img src="https://user-images.githubusercontent.com/102784267/233593920-e899265d-4154-4256-9151-a0c54e26375e.png" width="65" height="65">
+        <h3>商品紹介</h3>
+    </div>
+    <div class="row">
+      <div class="item col-lg-4 col-md-6">
+        <div class="item-img"><img src="https://user-images.githubusercontent.com/102784267/233263382-539310fd-6d2c-4582-bb54-f6f5ea57f180.png" width="280"></div>
+        <h4>コッペパン</h4>
+        <small>（税込180円）</small>
+        <p>給食パンの定番、ツヤのあるふわふわのコッペパンです。そのままでもやさしい甘みが自慢です。ジャムやバターをつけてもおいしく食べていただけます。（レジ横でジャムも販売しています）。</p>
+      </div>
+      <div class="item col-lg-4 col-md-6">
+        <div class="item-img"><img src="https://user-images.githubusercontent.com/102784267/233263388-1f4bcb00-f8ca-407c-aafd-16aee606ba36.png" width="280"></div>
+        <h4>ツイストパン </h4>
+        <small>（税込170円）</small>
+        <p>モチモチとした食感が味わえます。卵とバターの風味を強く感じられるところが当店のこだわりポイント。オーブントースターで1分ほど焼いてから食べていただくのがおすすめです。</p>
+      </div>
+      <div class="item col-lg-4 col-md-6">
+        <div class="item-img"><img src="https://user-images.githubusercontent.com/102784267/233263374-7cdc7ff7-9e35-4cfb-9419-f9eb63f44ee9.png" width="280"></div>
+        <h4>まるパン</h4>
+        <small>（税込160円）</small>
+        <p>あっさりとして素朴な味わいのシンプルなパンです。お好みでバターをつけたり、半分に割ってハンバーグやミネストローネと一緒に食べても最高です！</p>
+      </div>
+      <div class="item col-lg-4 col-md-6">
+        <div class="item-img"><img src="https://user-images.githubusercontent.com/102784267/233263379-25addf9c-8d15-4e13-bdf6-6e68b4033c3a.png" width="280"></div>
+        <h4>たまごサンド</h4>
+        <small>（税込210円）</small>
+        <p>コッペパンに、みんなが大好きなタマゴサラダと、シャキシャキのキュウリをサンドしました。ランチや小腹がすいたときにどうぞ。</p>
+      </div>
+      <div class="item col-lg-4 col-md-6">
+        <div class="item-img"><img src="https://user-images.githubusercontent.com/102784267/233263386-d496233b-9027-469a-ad1d-557a030c77d2.png" width="280"></div>
+        <h4>コルネ</h4>
+        <small>（税込200円）</small>
+        <p>ツイストパンに、自家製のカスタードクリームとチョコレートクリームをそれぞれ絞りました。おやつにどうぞ。</p>
+      </div>
+      <div class="item col-lg-4 col-md-6">
+        <div class="item-img"><img src="https://user-images.githubusercontent.com/102784267/233263371-a5a0e6e1-b2d7-47ad-94ef-229ec5432e46.png" width="280"></div>
+        <h4>あんぱん</h4>
+        <small>（税込190円）</small>
+        <p>ご近所の橋本和菓子店さん製のつぶあん入りです。塩気のある生地とよく合います。</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- フッター -->
+  <footer>
+    <div class="sns-icon">
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-line"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
+    <small>(c) 256times.com</small>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
